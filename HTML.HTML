@@ -1,18 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Notícias de Futebol</title>
 </head>
-<body onload="iniciar()">
-    <Script type="text/javascript">
+<body>
+    <header>
+        <h1>Notícias de Futebol</h1>
+        <nav>
+            <ul>
+                <li><a href="#ultimas-noticias">Últimas Notícias</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="ultimas-noticias">
+            <h2>Últimas Notícias</h2>
+            <article>
+                <h3>Atletico Mineneiro bate o gremio por 2x1</h3>
+                <p>Com gol de dyverson e hulk o atletico bate o gremio em  casa</p>
+            </article>
+            <article>
+                <h3>Transferências de Jogadores</h3>
+                <p>O mercado de transferências está agitado, com grandes nomes mudando de time.</p>
+            </article>
+        </section>
+        
+        <section id="videos">
+            <h2>Vídeos</h2>
+            <video controls>
+                <source src="<iframe width="560" height="315" src="https://www.youtube.com/embed/mjblLiun8HY?si=fVH3ZUrIkrMDdhZ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
 
-        function iniciar () {
-            document.write ("<h1>" +  document.title +  "</h1");
-            document.write("Olá Pessoal!</br");
-
-        }
-    </Script>
+        <section id="imagens">
+            <h2>Imagens</h2>
+            <img src="imagem-futebol.jpg" alt="Jogadores em campo">
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Notícias de Futebol. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
